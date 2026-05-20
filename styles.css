@@ -25,6 +25,12 @@ table {
   background: rgb(150, 150, 150);
 }
 
+#buttons, #preview {
+  border: 3px solid black;
+  color: black;
+  width: 38vw;
+}
+
 #textbox {
   position: fixed;
   padding-left: 5vw;
@@ -34,3 +40,4 @@ table {
 #empty {
   width: 45vw;
 }
+
