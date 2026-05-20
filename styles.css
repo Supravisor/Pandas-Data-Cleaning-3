@@ -21,4 +21,6 @@ table {
 
 #preview {
   height: 70vh;
+  border-radius: 7px;
+  background: rgb(150, 150, 150);
 }
