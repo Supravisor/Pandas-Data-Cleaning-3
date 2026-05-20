@@ -41,3 +41,6 @@ table {
   width: 45vw;
 }
 
+td {
+  vertical-align: top;
+}
