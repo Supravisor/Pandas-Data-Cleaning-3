@@ -13,3 +13,8 @@ h1 {
 table {
   margin: auto;
 }
+
+#buttons {
+  background: LightBlue;
+  padding: 10px;  
+}
