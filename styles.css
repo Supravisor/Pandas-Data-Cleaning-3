@@ -18,3 +18,7 @@ table {
   background: LightBlue;
   padding: 10px;  
 }
+
+#preview {
+  height: 70vh;
+}
