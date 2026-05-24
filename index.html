@@ -29,6 +29,18 @@
   <input type="button" class="btn btn-module" value="version" onclick="document.editor.textbox.value+='\nprint(np.__version__)'" />
 </p>
 
+<hr />
+<h2>Reading data with Python</h2>
+
+<p>
+  <input class="btn" name="filePath" id="filePath" placeholder="file path" type="textfield" />
+  <input class="btn" name="fileObject" id="fileObject" placeholder="file object" type="textfield" />
+</p>
+
+<p>
+  <input type="button" class="btn btn-success" value="read contents" onclick="readContents();" />
+</p>
+
             </div>            
           </td>
           <td id="textbox">
