@@ -66,3 +66,10 @@ td {
   background: #449d44;
   border-color: #398439;
 }
+
+label > select {
+  display: block;
+  position: relative;
+  left: 10em;
+  top: -2.5em;
+}
