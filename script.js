@@ -45,5 +45,7 @@ const useModule = () => {
 const readCsv = () => {
   if (filePath.value === "") {
     return alert("Please enter a file path in the 'file path' field, in the 'Reading data with Python' section.");
+  } else if (fileObject.value === "") {
+      return alert("Please enter a file object in the 'file object' field, in the 'Reading data with Python' section.");
   }
 }
