@@ -51,10 +51,9 @@ const readCsv = () => {
 
       let keep = "";
 
+      if (header.value) {
+        keep += ",\n        " + header.name + "=" + header.value;
+      }
+
   }
 }
-
-
-
-
-
