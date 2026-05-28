@@ -49,6 +49,8 @@ const readCsv = () => {
       return alert("Please enter a file object in the 'file object' field, in the 'Reading data with Python' section.");
   } else {
 
+      let keep = "";
+
   }
 }
 
