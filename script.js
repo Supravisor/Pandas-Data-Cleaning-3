@@ -40,3 +40,8 @@ const useModule = () => {
       document.editor.textbox.value+="\nwith open('" + filePath.value  + ".csv', 'r') as " + fileObject.value + ":\n    reader = csv.reader(" + fileObject.value + ", delimiter='" + keep + "')\n    next(reader)\n    for index, values in enumerate(reader):\n        if not values:\n            continue\n        timestamp, price = values\n        print(f'date: {timestamp} price: ${price}')";
   }
 }
+
+// Reading data with Pandas
+const readCsv = () => {
+
+}
