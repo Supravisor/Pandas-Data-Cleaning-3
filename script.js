@@ -70,5 +70,10 @@ const readCsv = () => {
       if (thousands.value) {
         keep += ",\n        " + thousands.name + "=" + thousands.value;
       }
+
+      if (parseDates.value) {
+        keep += ",\n        " + parseDates.value;
+      }
+
   }
 }
