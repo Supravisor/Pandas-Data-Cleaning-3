@@ -75,5 +75,9 @@ const readCsv = () => {
         keep += ",\n        " + parseDates.value;
       }
 
+      if (names.value) {
+        let regex = /\s*,\s*/g;
+        keep += ",\n        names=['" + names.value.replaceAll(regex, "', '").split(",") + "']";
+      }
   }
 }
