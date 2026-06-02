@@ -59,5 +59,9 @@ const readCsv = () => {
         keep += ",\n        " + naValues.value;
       }
 
+      if (sep.value) {
+        keep += ",\n        " + sep.name + "='" + sep.value + "'";
+      }
+
   }
 }
