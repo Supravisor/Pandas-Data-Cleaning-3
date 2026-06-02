@@ -87,5 +87,14 @@ const readCsv = () => {
             keep += ",\n        dtype={'" + dtype.value + "': " + dtypes.value + "}";
         }
       }
+
+      if (indexCol.value) {
+        if (indexColumn.value === "") {
+          return alert("Please enter an integer for an index in the 'index' field, in the 'Reading data with Pandas' section.");
+        } else {
+            keep += ",\n        " + indexCol.value + "[" + indexColumn.value + "]";
+        }
+      }
+
   }
 }
