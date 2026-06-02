@@ -66,5 +66,9 @@ const readCsv = () => {
       if (decimal.value) {
         keep += ",\n        " + decimal.name + "=" + decimal.value;
       }
+
+      if (thousands.value) {
+        keep += ",\n        " + thousands.name + "=" + thousands.value;
+      }
   }
 }
