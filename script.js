@@ -59,5 +59,33 @@ const readCsv = () => {
         keep += ",\n        " + naValues.value;
       }
 
+      if (sep.value) {
+        keep += ",\n        " + sep.name + "='" + sep.value + "'";
+      }
+
+      if (decimal.value) {
+        keep += ",\n        " + decimal.name + "=" + decimal.value;
+      }
+
+      if (thousands.value) {
+        keep += ",\n        " + thousands.name + "=" + thousands.value;
+      }
+
+      if (parseDates.value) {
+        keep += ",\n        " + parseDates.value;
+      }
+
+      if (names.value) {
+        let regex = /\s*,\s*/g;
+        keep += ",\n        names=['" + names.value.replaceAll(regex, "', '").split(",") + "']";
+      }
+
+      if (dtype.value) {
+        if (dtypes.value === "") {
+          return alert("Please select a dtype from the drop down menu to the right, in the 'Reading data with Pandas' section.");
+        } else {
+            keep += ",\n        dtype={'" + dtype.value + "': " + dtypes.value + "}";
+        }
+      }
   }
 }
