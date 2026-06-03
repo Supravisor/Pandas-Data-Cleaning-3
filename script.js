@@ -126,5 +126,6 @@ const readCsv = () => {
         keep += ",\n        skiprows=[" + skiprowsStart.value + ", " + skiprowsEnd.value + "]";
       }
 
+      document.editor.textbox.value+="\n" + fileObject.value + " = pd.read_csv('" + filePath.value + ".csv'" + keep + ")\n" + fileObject.value + ".head()";
   }
 }
