@@ -104,5 +104,9 @@ const readCsv = () => {
         keep += ",\n        skip_blank_lines=" + skipBlankLines.value;
       }
 
+      if (squeeze.value) {
+        keep += ",\n        " + squeeze.name + "=" + squeeze.value;
+      }
+
   }
 }
