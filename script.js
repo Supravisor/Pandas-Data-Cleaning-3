@@ -87,5 +87,44 @@ const readCsv = () => {
             keep += ",\n        dtype={'" + dtype.value + "': " + dtypes.value + "}";
         }
       }
+
+      if (indexCol.value) {
+        if (indexColumn.value === "") {
+          return alert("Please enter an integer for an index in the 'index' field, in the 'Reading data with Pandas' section.");
+        } else {
+            keep += ",\n        " + indexCol.value + "[" + indexColumn.value + "]";
+        }
+      }
+
+      if (encoding.value) {
+        keep += ",\n        " + encoding.value;
+      }
+
+      if (skipBlankLines.value) {
+        keep += ",\n        skip_blank_lines=" + skipBlankLines.value;
+      }
+
+      if (squeeze.value) {
+        keep += ",\n        " + squeeze.name + "=" + squeeze.value;
+      }
+
+      if (usecols.value) {
+        let columns = usecols.value.split(",");
+
+        if (columns.every(item => Number(item))) {
+          keep += ",\n        " + usecols.name + "=[" + usecols.value.replaceAll(/\s*,\s*/g, ", ") + "]";
+        } else {
+            keep += ",\n        " + usecols.name + "=['" + usecols.value.replaceAll(/\s*,\s*/g, "', '") + "']";
+        }
+      }
+
+      if (skiprowsStart.value && !skiprowsEnd.value) {
+        keep += ",\n        skiprows=" + skiprowsStart.value;
+      }
+
+      if (skiprowsStart.value && skiprowsEnd.value) {
+        keep += ",\n        skiprows=[" + skiprowsStart.value + ", " + skiprowsEnd.value + "]";
+      }
+
   }
 }
