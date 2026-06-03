@@ -45,12 +45,13 @@
 
 <label>
 delimiter
-  <select name="delimiter"></select>
+  <select name="delimiter">
     <option value=""></option>
     <option value=">">greater than sign</option>
     <option value=",">comma</option>
     <option value=";">semi-colon</option>
     <option value="\t">tab</option>
+  </select>
 </label>
 
 <hr />
@@ -60,6 +61,17 @@ delimiter
   <input type="button" class="btn btn-success" value="read_csv()" onclick="readCsv();" />
 </p>
 
+<p>
+  <label>header
+    <select name="header">
+      <option value=""></option>
+      <option value="None">None</option>
+    </select>
+  </label>
+
+<label>na_values
+</label>
+</p>
             </div>            
           </td>
           <td id="textbox">
