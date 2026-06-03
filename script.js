@@ -96,5 +96,9 @@ const readCsv = () => {
         }
       }
 
+      if (encoding.value) {
+        keep += ",\n        " + encoding.value;
+      }
+
   }
 }
