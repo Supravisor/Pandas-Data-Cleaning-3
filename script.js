@@ -108,5 +108,9 @@ const readCsv = () => {
         keep += ",\n        " + squeeze.name + "=" + squeeze.value;
       }
 
+      if (usecols.value) {
+        
+      }
+
   }
 }
