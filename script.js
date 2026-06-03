@@ -109,7 +109,7 @@ const readCsv = () => {
       }
 
       if (usecols.value) {
-        
+        let columns = usecols.value.split(",");
       }
 
   }
