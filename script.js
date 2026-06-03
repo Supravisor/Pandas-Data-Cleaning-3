@@ -100,5 +100,9 @@ const readCsv = () => {
         keep += ",\n        " + encoding.value;
       }
 
+      if (skipBlankLines.value) {
+        keep += ",\n        skip_blank_lines=" + skipBlankLines.value;
+      }
+
   }
 }
