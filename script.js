@@ -118,5 +118,9 @@ const readCsv = () => {
         }
       }
 
+      if (skiprowsStart.value && !skiprowsEnd.value) {
+        keep += ",\n        skiprows=" + skiprowsStart.value;
+      }
+
   }
 }
