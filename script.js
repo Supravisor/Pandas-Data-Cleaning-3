@@ -110,6 +110,12 @@ const readCsv = () => {
 
       if (usecols.value) {
         let columns = usecols.value.split(",");
+
+        if (columns.every(item => Number(item))) {
+          keep += ",\n        " + usecols.name + "=[" + usecols.value.replaceAll(/\s*,\s*/g, ", ") + "]";
+        } else {
+            keep += ",\n        " + usecols.name + "=['" + usecols.value.replaceAll(/\s*,\s*/g, "', '") + "']";
+        }
       }
 
   }
