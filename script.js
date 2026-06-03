@@ -122,5 +122,9 @@ const readCsv = () => {
         keep += ",\n        skiprows=" + skiprowsStart.value;
       }
 
+      if (skiprowsStart.value && skiprowsEnd.value) {
+        keep += ",\n        skiprows=[" + skiprowsStart.value + ", " + skiprowsEnd.value + "]";
+      }
+
   }
 }
