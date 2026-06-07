@@ -42,6 +42,8 @@ const useModule = () => {
 }
 
 // Reading data with Pandas
+let header = document.editor.header;
+
 const readCsv = () => {
   if (filePath.value === "") {
     return alert("Please enter a file path in the 'file path' field, in the 'Reading data with Python' section.");
