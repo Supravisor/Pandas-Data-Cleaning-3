@@ -43,6 +43,7 @@ const useModule = () => {
 
 // Reading data with Pandas
 let header = document.editor.header;
+let naValues = document.editor.naValues;
 
 const readCsv = () => {
   if (filePath.value === "") {
