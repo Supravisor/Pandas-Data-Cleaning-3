@@ -45,6 +45,7 @@ const useModule = () => {
 let header = document.editor.header;
 let naValues = document.editor.naValues;
 let sep = document.editor.sep;
+let decimal = document.editor.decimal;
 
 const readCsv = () => {
   if (filePath.value === "") {
