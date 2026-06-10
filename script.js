@@ -47,6 +47,7 @@ let naValues = document.editor.naValues;
 let sep = document.editor.sep;
 let decimal = document.editor.decimal;
 let thousands = document.editor.thousands;
+let parseDates = document.editor.parseDates;
 
 const readCsv = () => {
   if (filePath.value === "") {
