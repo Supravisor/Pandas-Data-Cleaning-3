@@ -49,6 +49,7 @@ let decimal = document.editor.decimal;
 let thousands = document.editor.thousands;
 let parseDates = document.editor.parseDates;
 let encoding = document.editor.encoding;
+let skipBlankLines = document.editor.skipBlankLines;
 
 const readCsv = () => {
   if (filePath.value === "") {
