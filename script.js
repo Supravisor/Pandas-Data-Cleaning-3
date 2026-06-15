@@ -52,6 +52,7 @@ let encoding = document.editor.encoding;
 let skipBlankLines = document.editor.skipBlankLines;
 let squeeze = document.editor.squeeze;
 let usecols = document.getElementById("usecols");
+let skiprowsStart = document.getElementById("skiprowsStart");
 
 const readCsv = () => {
   if (filePath.value === "") {
