@@ -51,6 +51,7 @@ let parseDates = document.editor.parseDates;
 let encoding = document.editor.encoding;
 let skipBlankLines = document.editor.skipBlankLines;
 let squeeze = document.editor.squeeze;
+let usecols = document.getElementById("usecols");
 
 const readCsv = () => {
   if (filePath.value === "") {
