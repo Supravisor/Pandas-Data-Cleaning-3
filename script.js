@@ -50,6 +50,7 @@ let thousands = document.editor.thousands;
 let parseDates = document.editor.parseDates;
 let encoding = document.editor.encoding;
 let skipBlankLines = document.editor.skipBlankLines;
+let squeeze = document.editor.squeeze;
 
 const readCsv = () => {
   if (filePath.value === "") {
