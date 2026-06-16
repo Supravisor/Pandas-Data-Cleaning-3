@@ -54,6 +54,7 @@ let squeeze = document.editor.squeeze;
 let usecols = document.getElementById("usecols");
 let skiprowsStart = document.getElementById("skiprowsStart");
 let skiprowsEnd = document.getElementById("skiprowsEnd");
+let indexColumn = document.getElementById("indexColumn");
 
 const readCsv = () => {
   if (filePath.value === "") {
