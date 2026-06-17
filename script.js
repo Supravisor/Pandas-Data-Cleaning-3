@@ -56,6 +56,9 @@ let skiprowsStart = document.getElementById("skiprowsStart");
 let skiprowsEnd = document.getElementById("skiprowsEnd");
 let indexColumn = document.getElementById("indexColumn");
 let indexCol = document.editor.indexCol;
+let names = document.getElementById("names");
+let dtype = document.getElementById("dtype");
+let dtypes = document.editor.dtypes;
 
 const readCsv = () => {
   if (filePath.value === "") {
