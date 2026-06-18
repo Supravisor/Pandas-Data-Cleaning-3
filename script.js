@@ -155,3 +155,27 @@ const timeStamp = (arg) => {
       document.editor.textbox.value+="\n" + fileObject.value + "['" + arg + "'] = pd.to_datetime(df['Timestamp'])";
   }
 }
+
+// Save to CSV file
+let savePath = document.getElementById("savePath");
+let saveObject = document.getElementById("saveObject");
+let index = document.editor.index;
+
+const saveCsv = (arg) => {
+  if (savePath.value === "") {
+    return alert("Please enter a file path in the 'file path' field, in the 'Save to CSV file' section.");
+  } 
+
+  if (!saveObject.value) {
+    document.editor.textbox.value+="\n" + savePath.value + "." + arg.slice(0, -1) + ")";
+  } else {
+      let object = "'" + saveObject.value + ".csv'";
+      let save = "";
+
+      if (index.value) {
+        save += ",\n        " + index.name + "=" + index.value;
+      }
+
+      document.editor.textbox.value+="\n" + savePath.value + "." + arg.slice(0, -1) + object + save + ")";
+  }
+}

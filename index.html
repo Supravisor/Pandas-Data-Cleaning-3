@@ -177,6 +177,27 @@ skiprows
   <input type="button" class="btn btn-success" value="Timestamp" onclick="timeStamp(this.value);" />
 </p>
 
+<hr />
+<h2>Save to CSV file</h2>
+
+<p>
+  <input class="btn" name="savePath" id="savePath" placeholder="file path" type="textfield" />
+  <input class="btn" name="saveObject" id="saveObject" placeholder="file object" type="textfield" />
+</p>
+
+<p>
+  <input type="button" class="btn btn-success" value="to_csv()" onclick="saveCsv(this.value)" />
+</p>
+
+<p>
+<label>
+index
+  <select name="index">
+    <option value=""></option>
+    <option value="None">None</option>
+  </select>
+</label>
+</p>
             </div>            
           </td>
           <td id="textbox">
