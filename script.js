@@ -170,5 +170,9 @@ const saveCsv = (arg) => {
   } else {
       let object = "'" + saveObject.value + ".csv'";
       let save = "";
+
+      if (index.value) {
+        save += ",\n        " + index.name + "=" + index.value;
+      }
   }
 }
