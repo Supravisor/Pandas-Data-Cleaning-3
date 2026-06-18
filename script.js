@@ -155,3 +155,6 @@ const timeStamp = (arg) => {
       document.editor.textbox.value+="\n" + fileObject.value + "['" + arg + "'] = pd.to_datetime(df['Timestamp'])";
   }
 }
+
+// Save to CSV file
+let savePath = document.getElementById("savePath");
