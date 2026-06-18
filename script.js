@@ -147,3 +147,11 @@ const readCsv = () => {
       document.editor.textbox.value+="\n" + fileObject.value + " = pd.read_csv('" + filePath.value + ".csv'" + keep + ")\n" + fileObject.value + ".head()";
   }
 }
+
+const timeStamp = (arg) => {
+  if (fileObject.value === "") {
+    return alert("Please enter a file object in the 'file object' field, in the 'Reading data with Python' section.");
+  } else {
+      document.editor.textbox.value+="\n" + fileObject.value + "['" + arg + "'] = pd.to_datetime(df['Timestamp'])";
+  }
+}

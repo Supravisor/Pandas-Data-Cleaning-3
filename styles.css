@@ -74,6 +74,11 @@ label > select {
   top: -2.5em;
 }
 
+label > input {
+  position: relative;
+  left: 4.5em;
+}
+
 select {
   padding: 13px 12px;
   border-radius: 4px;
@@ -85,4 +90,13 @@ input {
   padding: 2px 3px;
   margin-left: 6px;
   margin-bottom: 6px;
+}
+
+input[type="number"] {
+  width: 60px;
+}
+
+#usecols {
+  position: relative;
+  left: 5.1em;
 }
