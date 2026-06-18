@@ -159,3 +159,6 @@ const timeStamp = (arg) => {
 // Save to CSV file
 let savePath = document.getElementById("savePath");
 let saveObject = document.getElementById("saveObject");
+
+const saveCsv = (arg) => {
+}
