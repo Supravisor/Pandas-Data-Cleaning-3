@@ -90,3 +90,8 @@ input {
   margin-left: 6px;
   margin-bottom: 6px;
 }
+
+#usecols {
+  position: relative;
+  left: 5.1em;
+}
