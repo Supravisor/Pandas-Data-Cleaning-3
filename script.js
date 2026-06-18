@@ -161,4 +161,12 @@ let savePath = document.getElementById("savePath");
 let saveObject = document.getElementById("saveObject");
 
 const saveCsv = (arg) => {
+  if (savePath.value === "") {
+    return alert("Please enter a file path in the 'file path' field, in the 'Save to CSV file' section.");
+  } 
 }
+
+
+
+
+
