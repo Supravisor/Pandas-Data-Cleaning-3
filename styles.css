@@ -74,8 +74,9 @@ label > select {
   top: -2.5em;
 }
 
-input[type="number"] {
-  width: 60px;
+label > input {
+  position: relative;
+  left: 4.5em;
 }
 
 select {
@@ -89,6 +90,10 @@ input {
   padding: 2px 3px;
   margin-left: 6px;
   margin-bottom: 6px;
+}
+
+input[type="number"] {
+  width: 60px;
 }
 
 #usecols {
