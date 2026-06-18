@@ -164,9 +164,8 @@ const saveCsv = (arg) => {
   if (savePath.value === "") {
     return alert("Please enter a file path in the 'file path' field, in the 'Save to CSV file' section.");
   } 
+
+  if (!saveObject.value) {
+    document.editor.textbox.value+="\n" + savePath.value + "." + arg.slice(0, -1) + ")";
+  }
 }
-
-
-
-
-
