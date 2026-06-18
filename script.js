@@ -169,5 +169,6 @@ const saveCsv = (arg) => {
     document.editor.textbox.value+="\n" + savePath.value + "." + arg.slice(0, -1) + ")";
   } else {
       let object = "'" + saveObject.value + ".csv'";
+      let save = "";
   }
 }
