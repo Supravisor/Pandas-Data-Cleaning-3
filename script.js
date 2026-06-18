@@ -174,5 +174,7 @@ const saveCsv = (arg) => {
       if (index.value) {
         save += ",\n        " + index.name + "=" + index.value;
       }
+
+      document.editor.textbox.value+="\n" + savePath.value + "." + arg.slice(0, -1) + object + save + ")";
   }
 }
